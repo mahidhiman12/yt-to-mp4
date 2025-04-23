@@ -7,6 +7,14 @@ import glob
 
 app = Flask(__name__)
 
+@app.route('/')
+def hello_world():
+    return 'Hello, world!'
+
+# Run the app on the correct port
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))  # Get the port from environment or use 5000 by default
+    app.run(host="0.0.0.0", port=port) 
 
 DOWNLOAD_DIR = os.path.join(os.getcwd(), "downloads")
 
