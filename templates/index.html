@@ -1,0 +1,450 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>YouTube to MP4</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .container {
+      background: white;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+      width: 100%;
+      max-width: 500px;
+      text-align: center;
+    }
+    .spinner-border {
+      display: none;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2 class="mb-4">Download YouTube Video</h2>
+    <form action="/download" method="POST" onsubmit="showSpinner()">
+      <input type="text" class="form-control" name="url" placeholder="Paste YouTube link here..." required>
+      <button type="submit" class="btn btn-danger w-100 mt-3">Download MP4</button>
+    </form>
+    <div class="spinner-border text-danger" role="status" id="loadingSpinner">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+
+  <script>
+    function showSpinner() {
+      document.getElementById('loadingSpinner').style.display = 'inline-block';
+    }
+  </script>
+</body>
+</html> -->
+
+
+<!-- 'dark theme' -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YouTube to MP4</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #121212;
+      color: #fff;
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background: #1f1f1f;
+      padding: 3rem;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(238, 180, 209, 0.3);
+      width: 90%;
+      max-width: 500px;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 1.5rem;
+      color: #ff4081;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      border: none;
+      border-radius: 10px;
+      background-color: #2a2a2a;
+      color: #fff;
+      font-size: 1rem;
+    }
+    button {
+      background: #ff4081;
+      border: none;
+      padding: 0.8rem 2rem;
+      border-radius: 10px;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background: #ff1c6a;
+    }
+    .footer {
+      margin-top: 2rem;
+      font-size: 0.8rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>YouTube to MP4</h1>
+    <form action="/download" method="POST">
+      <input type="text" name="url" placeholder="Paste YouTube link here..." required>
+      <br>
+      <button type="submit">Download</button>
+    </form>
+    <div class="footer">
+      Made with ☕ and ✨ by your baddie
+    </div>
+  </div>
+</body>
+</html> -->
+
+
+
+
+
+<!-- cat theme -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CatTube Converter 🐱</title>
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #fff8f0;
+      color: #4b3f3f;
+      font-family: 'Patrick Hand', cursive;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 3rem;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      width: 90%;
+      max-width: 500px;
+      text-align: center;
+      position: relative;
+    }
+
+    h1 {
+      margin-bottom: 1.2rem;
+      color: #f27c8d;
+      font-size: 2.5rem;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      border: 2px solid #f9d6dc;
+      border-radius: 10px;
+      background-color: #fff0f4;
+      color: #4b3f3f;
+      font-size: 1rem;
+    }
+
+    button {
+      background: #f27c8d;
+      border: none;
+      padding: 0.8rem 2rem;
+      border-radius: 12px;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #e0576c;
+    }
+
+    .footer {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #a88686;
+    }
+
+    .footer::before {
+      content: "🐾 ";
+    }
+
+    .loading {
+      display: none;
+      margin-top: 2rem;
+    }
+
+    .loading img {
+      width: 80px;
+      margin-bottom: 1rem;
+    }
+
+    .progress-bar {
+      height: 20px;
+      width: 100%;
+      background: #fde4ec;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-top: 10px;
+    }
+
+    .progress-fill {
+      height: 100%;
+      width: 0%;
+      background: #f27c8d;
+      transition: width 0.3s ease;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>YouTube to MP4 Converter 🐱</h1>
+    <form id="downloadForm" action="/download" method="POST">
+      <input type="text" name="url" placeholder="Paste a meowgical YouTube link..." required>
+      <br>
+      <button type="submit">Download 🎥</button>
+    </form>
+
+    <div class="loading" id="loadingArea">
+      
+      <div>Downloading... <span id="percent">0%</span></div>
+      <div class="progress-bar">
+        <div class="progress-fill" id="fillBar"></div>
+      </div>
+    </div>
+
+    <div class="footer">
+      Made with 🐾 
+      It ensures high quality too  😽
+    </div>
+  </div>
+
+  <script>
+    const form = document.getElementById('downloadForm');
+    const loading = document.getElementById('loadingArea');
+    const percent = document.getElementById('percent');
+    const fillBar = document.getElementById('fillBar');
+
+    form.addEventListener('submit', () => {
+      loading.style.display = 'block';
+
+      let progress = 0;
+      const interval = setInterval(() => {
+        if (progress >= 99) {
+          clearInterval(interval);
+          percent.innerText = 'Processing...';
+        } else {
+          progress += Math.floor(Math.random() * 5) + 1;
+          percent.innerText = `${progress}%`;
+          fillBar.style.width = `${progress}%`;
+        }
+      }, 300);
+    });
+  </script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CatTube Converter 🐱</title>
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #fff8f0;
+      color: #4b3f3f;
+      font-family: 'Patrick Hand', cursive;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      flex-direction: column;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 3rem;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      width: 90%;
+      max-width: 500px;
+      text-align: center;
+      position: relative;
+    }
+
+    h1 {
+      margin-bottom: 1.2rem;
+      color: #f27c8d;
+      font-size: 2.5rem;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      border: 2px solid #f9d6dc;
+      border-radius: 10px;
+      background-color: #fff0f4;
+      color: #4b3f3f;
+      font-size: 1rem;
+    }
+
+    button {
+      background: #f27c8d;
+      border: none;
+      padding: 0.8rem 2rem;
+      border-radius: 12px;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #e0576c;
+    }
+
+    .footer {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #a88686;
+    }
+
+    .footer::before {
+      content: "🐾 ";
+    }
+
+    .loading {
+      display: none;
+      margin-top: 2rem;
+    }
+
+    .loading img {
+      width: 80px;
+      margin-bottom: 1rem;
+    }
+
+    .progress-bar {
+      height: 20px;
+      width: 100%;
+      background: #fde4ec;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-top: 10px;
+    }
+
+    .progress-fill {
+      height: 100%;
+      width: 0%;
+      background: #f27c8d;
+      transition: width 0.3s ease;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 2rem;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      button {
+        padding: 0.8rem 1.5rem;
+      }
+
+      .progress-bar {
+        height: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>YouTube to MP4 Converter 🐱</h1>
+    <form id="downloadForm" action="/download" method="POST">
+      <input type="text" name="url" placeholder="Paste a YouTube link..." required>
+      <br>
+      <button type="submit">Download 🎥</button>
+    </form>
+
+    <div class="loading" id="loadingArea">
+      <div>Downloading... <span id="percent">0%</span></div>
+      <div class="progress-bar">
+        <div class="progress-fill" id="fillBar"></div>
+      </div>
+    </div>
+
+    <div class="footer">
+      Made with 🐾 
+      ( AND YES It ensures high quality ) 😽
+    </div>
+  </div>
+
+  <script>
+    const form = document.getElementById('downloadForm');
+    const loading = document.getElementById('loadingArea');
+    const percent = document.getElementById('percent');
+    const fillBar = document.getElementById('fillBar');
+
+    form.addEventListener('submit', () => {
+      //  loading area
+      loading.style.display = 'block';
+
+      //  progress update(FAKE)
+      let progress = 0;
+      const interval = setInterval(() => {
+        if (progress >= 99) {
+          clearInterval(interval);
+          percent.innerText = 'Processing...';
+        } else {
+          progress += Math.floor(Math.random() * 5) + 1;
+          percent.innerText = `${progress}%`;
+          fillBar.style.width = `${progress}%`;
+        }
+      }, 300);
+    });
+  </script>
+</body>
+</html>
