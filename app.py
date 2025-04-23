@@ -60,4 +60,5 @@ def download():
         return f"<h3 style='color:red;'>❌ Error: {str(e)}</h3>"
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(app.run(debug=False, host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))
+)
